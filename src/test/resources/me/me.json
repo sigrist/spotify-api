@@ -1,0 +1,25 @@
+{
+	"birthdate": "1979-05-25",
+	"country": "BR",
+	"display_name": "Paulo Sigrist",
+	"email": "paulo.sigrist@gmail.com",
+	"external_urls": {
+		"spotify": "https://open.spotify.com/user/paulo.sigrist"
+	},
+	"followers": {
+		"href": null,
+		"total": 29
+	},
+	"href": "https://api.spotify.com/v1/users/paulo.sigrist",
+	"id": "paulo.sigrist",
+	"images": [
+		{
+			"height": null,
+			"url": "https://scontent.xx.fbcdn.net/v/t1.0-1/c0.0.200.200a/p200x200/1959512_10152070958135892_2095436769_n.jpg?_nc_cat=111&_nc_ht=scontent.xx&oh=8ce513649a971cc27e66dad2f76feba9&oe=5CDD8E7E",
+			"width": null
+		}
+	],
+	"product": "premium",
+	"type": "user",
+	"uri": "spotify:user:paulo.sigrist"
+}
