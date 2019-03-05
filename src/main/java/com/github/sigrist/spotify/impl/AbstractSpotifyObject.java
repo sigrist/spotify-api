@@ -18,6 +18,10 @@ public abstract class AbstractSpotifyObject {
 	public void loadJson() {
 		this.json = load();
 	}
+	
+	protected JsonNode json() {
+		return json;
+	}
 
 	protected final String asText(@NonNull final String fieldName) {
 		return jsonNode(fieldName).asText();
@@ -27,6 +31,14 @@ public abstract class AbstractSpotifyObject {
 		final String value = asText(fieldName);
 		
 		return LocalDate.parse(value);
+	}
+	
+	protected final Integer asInteger(@NonNull final String fieldName) {
+		return jsonNode(fieldName).asInt();
+	}
+
+	protected final Boolean asBoolean(@NonNull final String fieldName) {
+		return jsonNode(fieldName).asBoolean();
 	}
 
 	private JsonNode jsonNode(@NonNull final String fieldName) {

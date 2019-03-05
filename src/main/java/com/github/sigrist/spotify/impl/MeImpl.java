@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.github.sigrist.spotify.Me;
+import com.github.sigrist.spotify.Playlists;
 import com.github.sigrist.spotify.impl.feign.MeEndpoint;
 import com.github.sigrist.spotify.impl.proxy.Lazy;
 import com.github.sigrist.spotify.impl.proxy.SpotifyProxy;
@@ -49,6 +50,11 @@ public class MeImpl extends AbstractSpotifyObject implements Me {
 	@Lazy
 	public final String email() {
 		return asText("email");
+	}
+
+	@Override
+	public final Playlists playlists() {
+		return MePlaylistsImpl.instance(this.spotify);
 	}
 
 }

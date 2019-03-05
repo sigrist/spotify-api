@@ -18,4 +18,6 @@ public interface Me {
 	// product
 	// type
 	// uri
+	
+	Playlists playlists();
 }

@@ -14,7 +14,7 @@ public class FieldNotFoundException extends SpotifyAPIException {
 	private final JsonNode json;
 
 	public FieldNotFoundException(final String fieldName, final JsonNode json) {
-		super("The field '' does not exist.");
+		super("The field '" + fieldName + "' does not exist.");
 		this.json = json;
 	}
 

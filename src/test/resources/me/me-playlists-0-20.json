@@ -1,0 +1,790 @@
+{
+    "href": "https://api.spotify.com/v1/users/paulo.sigrist/playlists?offset=0&limit=20",
+    "items": [
+        {
+            "collaborative": false,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWY6vTWIdZ54A"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWY6vTWIdZ54A",
+            "id": "37i9dQZF1DWY6vTWIdZ54A",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://pl.scdn.co/images/pl/default/1b362d55ecf751fc249e08622b71ab975bed6ffa",
+                    "width": null
+                }
+            ],
+            "name": "Dirty Rock",
+            "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/spotify"
+                },
+                "href": "https://api.spotify.com/v1/users/spotify",
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MTU1MTQxNjQ2MCwwMDAwMDA1MzAwMDAwMTY5MzdhMDg0MTQwMDAwMDE2ODk5NzBmYTg4",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWY6vTWIdZ54A/tracks",
+                "total": 120
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWY6vTWIdZ54A"
+        },
+        {
+            "collaborative": true,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/59UsEU4WD961XJMuSDHXHA"
+            },
+            "href": "https://api.spotify.com/v1/playlists/59UsEU4WD961XJMuSDHXHA",
+            "id": "59UsEU4WD961XJMuSDHXHA",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://pl.scdn.co/images/pl/default/8ec0acc5094a18ed6e4c3de70823e50e1a4ca465",
+                    "width": null
+                }
+            ],
+            "name": "Dom ROCK",
+            "owner": {
+                "display_name": "jeh.ajdo",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/jeh.ajdo"
+                },
+                "href": "https://api.spotify.com/v1/users/jeh.ajdo",
+                "id": "jeh.ajdo",
+                "type": "user",
+                "uri": "spotify:user:jeh.ajdo"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NTUsZDdjM2I3NDQ0MTQ1Y2U4YzlmZTdhOWQ1MTAzOGNiNmU4YzMxOWJkMg==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/59UsEU4WD961XJMuSDHXHA/tracks",
+                "total": 30
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:59UsEU4WD961XJMuSDHXHA"
+        },
+        {
+            "collaborative": false,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/1NveipTfip7xmnNWzswLJk"
+            },
+            "href": "https://api.spotify.com/v1/playlists/1NveipTfip7xmnNWzswLJk",
+            "id": "1NveipTfip7xmnNWzswLJk",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/724303481c65c8895ecf25217e82c36fbebb0ec2888abe0092f47892cfa4dc9b29894f7230bdc3b5d1f77d7f4d3d512af10f937bbd132abbdb8ff1d2d8e69d18d3e79f6ea4692ee9fbfe6f1443aab128",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/724303481c65c8895ecf25217e82c36fbebb0ec2888abe0092f47892cfa4dc9b29894f7230bdc3b5d1f77d7f4d3d512af10f937bbd132abbdb8ff1d2d8e69d18d3e79f6ea4692ee9fbfe6f1443aab128",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/724303481c65c8895ecf25217e82c36fbebb0ec2888abe0092f47892cfa4dc9b29894f7230bdc3b5d1f77d7f4d3d512af10f937bbd132abbdb8ff1d2d8e69d18d3e79f6ea4692ee9fbfe6f1443aab128",
+                    "width": 60
+                }
+            ],
+            "name": "blues",
+            "owner": {
+                "display_name": "Paulo Sigrist",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/paulo.sigrist"
+                },
+                "href": "https://api.spotify.com/v1/users/paulo.sigrist",
+                "id": "paulo.sigrist",
+                "type": "user",
+                "uri": "spotify:user:paulo.sigrist"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "MjQsNDg0NGFkNTJiZTI1NzBlMjRhM2ExZmU0ZDc2YzJkNzM5ZjZmNTMxNg==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/1NveipTfip7xmnNWzswLJk/tracks",
+                "total": 22
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:1NveipTfip7xmnNWzswLJk"
+        },
+        {
+            "collaborative": false,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/67x8RIq1D2vFXFPME5uxNV"
+            },
+            "href": "https://api.spotify.com/v1/playlists/67x8RIq1D2vFXFPME5uxNV",
+            "id": "67x8RIq1D2vFXFPME5uxNV",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/0366c1123db0434ff0c741b04f49b71a639b882562235b84784f6308ae45b2913405cadd55119e2d78b83d226a9282cda9672232310a4a0e1124ce96c22aebe76dab3d1695a0d5ffd77e6cea5b028879",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/0366c1123db0434ff0c741b04f49b71a639b882562235b84784f6308ae45b2913405cadd55119e2d78b83d226a9282cda9672232310a4a0e1124ce96c22aebe76dab3d1695a0d5ffd77e6cea5b028879",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/0366c1123db0434ff0c741b04f49b71a639b882562235b84784f6308ae45b2913405cadd55119e2d78b83d226a9282cda9672232310a4a0e1124ce96c22aebe76dab3d1695a0d5ffd77e6cea5b028879",
+                    "width": 60
+                }
+            ],
+            "name": "Suits: All Seasons (Soundtrack)",
+            "owner": {
+                "display_name": "bestnewplaylists5",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/bestnewplaylists5"
+                },
+                "href": "https://api.spotify.com/v1/users/bestnewplaylists5",
+                "id": "bestnewplaylists5",
+                "type": "user",
+                "uri": "spotify:user:bestnewplaylists5"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MTM4NSxmODhjNTc2NmI3YWU0ZGM3NmQ4ZWM3Yzg3MTVlNjgyZTg3ZTVhZGYy",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/67x8RIq1D2vFXFPME5uxNV/tracks",
+                "total": 313
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:67x8RIq1D2vFXFPME5uxNV"
+        },
+        {
+            "collaborative": false,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/3bD4pB251pl1wKtzteyzki"
+            },
+            "href": "https://api.spotify.com/v1/playlists/3bD4pB251pl1wKtzteyzki",
+            "id": "3bD4pB251pl1wKtzteyzki",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://pl.scdn.co/images/pl/default/1f629885e951709fbd80602f2634595daddd25ac",
+                    "width": null
+                }
+            ],
+            "name": "Mindhunter Soundtrack Season 2 (Netflix)",
+            "owner": {
+                "display_name": "jhoustle3533",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/jhoustle3533"
+                },
+                "href": "https://api.spotify.com/v1/users/jhoustle3533",
+                "id": "jhoustle3533",
+                "type": "user",
+                "uri": "spotify:user:jhoustle3533"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NjAyLDcyMDM4Mjc2YjA4Y2MxMjM0OTc4NjkzMzU5M2IwZGM2ZThjZTQ4Y2U=",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/3bD4pB251pl1wKtzteyzki/tracks",
+                "total": 91
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:3bD4pB251pl1wKtzteyzki"
+        },
+        {
+            "collaborative": false,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/1NW1tS9FnTLoBEfzo644WX"
+            },
+            "href": "https://api.spotify.com/v1/playlists/1NW1tS9FnTLoBEfzo644WX",
+            "id": "1NW1tS9FnTLoBEfzo644WX",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/c0a7e71b3ce9692ed87afdcf5de5a80309f7bea5",
+                    "width": 640
+                }
+            ],
+            "name": "Rain",
+            "owner": {
+                "display_name": "Paulo Sigrist",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/paulo.sigrist"
+                },
+                "href": "https://api.spotify.com/v1/users/paulo.sigrist",
+                "id": "paulo.sigrist",
+                "type": "user",
+                "uri": "spotify:user:paulo.sigrist"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "NCwwZGM3NjAzYmE2YjUzNDVmNTQ2NTU0N2M2N2M5NGFjMDA3Yzg1Nzkw",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/1NW1tS9FnTLoBEfzo644WX/tracks",
+                "total": 2
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:1NW1tS9FnTLoBEfzo644WX"
+        },
+        {
+            "collaborative": false,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/433dSb8yRJZopS191EOseI"
+            },
+            "href": "https://api.spotify.com/v1/playlists/433dSb8yRJZopS191EOseI",
+            "id": "433dSb8yRJZopS191EOseI",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/07794c1df836402511ebc729019e04818c2689530ff97a3858adca8d9d599d1bc429772fbd920fe36ff01e029c0b13d63dda12f6e870ad5bb87c12358cbd163c6a46d057e9f158eaa9a03a9c2ef29150",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/07794c1df836402511ebc729019e04818c2689530ff97a3858adca8d9d599d1bc429772fbd920fe36ff01e029c0b13d63dda12f6e870ad5bb87c12358cbd163c6a46d057e9f158eaa9a03a9c2ef29150",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/07794c1df836402511ebc729019e04818c2689530ff97a3858adca8d9d599d1bc429772fbd920fe36ff01e029c0b13d63dda12f6e870ad5bb87c12358cbd163c6a46d057e9f158eaa9a03a9c2ef29150",
+                    "width": 60
+                }
+            ],
+            "name": "Modas de Viola",
+            "owner": {
+                "display_name": "Dirceu Juninho",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/22slbc6m6tt755dfquolwb66a"
+                },
+                "href": "https://api.spotify.com/v1/users/22slbc6m6tt755dfquolwb66a",
+                "id": "22slbc6m6tt755dfquolwb66a",
+                "type": "user",
+                "uri": "spotify:user:22slbc6m6tt755dfquolwb66a"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "MzQsZmE0ZTYzNTA4Mjg3M2Y4Nzg0Y2EzOTc3ZTljYmI1ZTEyNjg3MjczZQ==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/433dSb8yRJZopS191EOseI/tracks",
+                "total": 32
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:433dSb8yRJZopS191EOseI"
+        },
+        {
+            "collaborative": false,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/1bilH9D3C3bxTL3XEJKrTk"
+            },
+            "href": "https://api.spotify.com/v1/playlists/1bilH9D3C3bxTL3XEJKrTk",
+            "id": "1bilH9D3C3bxTL3XEJKrTk",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/155929d96c9144ce59814845ece9e5938a9272236f7f55eb932809cdfbbf1a2e626873bba7155059d6615207010fe4cafb85ee3e1fdea9370d1fc432ff64c8fa0690f50256456865821cc387d1f2d531",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/155929d96c9144ce59814845ece9e5938a9272236f7f55eb932809cdfbbf1a2e626873bba7155059d6615207010fe4cafb85ee3e1fdea9370d1fc432ff64c8fa0690f50256456865821cc387d1f2d531",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/155929d96c9144ce59814845ece9e5938a9272236f7f55eb932809cdfbbf1a2e626873bba7155059d6615207010fe4cafb85ee3e1fdea9370d1fc432ff64c8fa0690f50256456865821cc387d1f2d531",
+                    "width": 60
+                }
+            ],
+            "name": "Velharia",
+            "owner": {
+                "display_name": "Dirceu Juninho",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/22slbc6m6tt755dfquolwb66a"
+                },
+                "href": "https://api.spotify.com/v1/users/22slbc6m6tt755dfquolwb66a",
+                "id": "22slbc6m6tt755dfquolwb66a",
+                "type": "user",
+                "uri": "spotify:user:22slbc6m6tt755dfquolwb66a"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "NjUsMTA4NTQ2Yzg0N2Q0MjczZDMxOWQ0NGEwNmEzNWMxNzdiMmQyMGU5Mg==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/1bilH9D3C3bxTL3XEJKrTk/tracks",
+                "total": 57
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:1bilH9D3C3bxTL3XEJKrTk"
+        },
+        {
+            "collaborative": false,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/478wi4LZyjCS1Jo6y26xnI"
+            },
+            "href": "https://api.spotify.com/v1/playlists/478wi4LZyjCS1Jo6y26xnI",
+            "id": "478wi4LZyjCS1Jo6y26xnI",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/c1922e09eff0135b49d7dfe7c70345aa1b614a32dd695d8a18d33640f2abca4588ef36a8ac1811a6e6ac9101516fbc8ad59813d7a6ade0bfa11cbbc8f246f0215b2677068734a6d79119b864a7249ba5",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/c1922e09eff0135b49d7dfe7c70345aa1b614a32dd695d8a18d33640f2abca4588ef36a8ac1811a6e6ac9101516fbc8ad59813d7a6ade0bfa11cbbc8f246f0215b2677068734a6d79119b864a7249ba5",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/c1922e09eff0135b49d7dfe7c70345aa1b614a32dd695d8a18d33640f2abca4588ef36a8ac1811a6e6ac9101516fbc8ad59813d7a6ade0bfa11cbbc8f246f0215b2677068734a6d79119b864a7249ba5",
+                    "width": 60
+                }
+            ],
+            "name": "HOMELAND: Jazz playlist inspired by the TV show soundtrack",
+            "owner": {
+                "display_name": "Paul Dahill",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/pauldahill"
+                },
+                "href": "https://api.spotify.com/v1/users/pauldahill",
+                "id": "pauldahill",
+                "type": "user",
+                "uri": "spotify:user:pauldahill"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "MjA2LDEyNTBjODZjMjcyNzBkMDNhYzJkMWZiYzdjN2M0Y2M4OWJhZDQ2MTg=",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/478wi4LZyjCS1Jo6y26xnI/tracks",
+                "total": 629
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:478wi4LZyjCS1Jo6y26xnI"
+        },
+        {
+            "collaborative": false,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/35wX9dfZXP9zo1WIOGqALu"
+            },
+            "href": "https://api.spotify.com/v1/playlists/35wX9dfZXP9zo1WIOGqALu",
+            "id": "35wX9dfZXP9zo1WIOGqALu",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ff1fdc97adc8ee939dc59c58f5f65362595f2eee",
+                    "width": 640
+                }
+            ],
+            "name": "marvin",
+            "owner": {
+                "display_name": "Paulo Sigrist",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/paulo.sigrist"
+                },
+                "href": "https://api.spotify.com/v1/users/paulo.sigrist",
+                "id": "paulo.sigrist",
+                "type": "user",
+                "uri": "spotify:user:paulo.sigrist"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "MyxjYWU5Yzg1Y2EyZDJhZDZjOTAwMTA4Y2UzN2FiMjRmYTViZGE5ODE1",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/35wX9dfZXP9zo1WIOGqALu/tracks",
+                "total": 1
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:35wX9dfZXP9zo1WIOGqALu"
+        },
+        {
+            "collaborative": false,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/0LfNce4jRfTHuN81LXhPRw"
+            },
+            "href": "https://api.spotify.com/v1/playlists/0LfNce4jRfTHuN81LXhPRw",
+            "id": "0LfNce4jRfTHuN81LXhPRw",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/2fa0efbdb8fb12cfcdbcc876925ccf926232be5b3bdf7e3ca4cb006b3313abf7fffb4c2cafc9dbf8410ab4925c289ec60f839fcaf98f9107e30a696ab2fd3675b96c9207fc92a5ffab41ce024a0ace43",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/2fa0efbdb8fb12cfcdbcc876925ccf926232be5b3bdf7e3ca4cb006b3313abf7fffb4c2cafc9dbf8410ab4925c289ec60f839fcaf98f9107e30a696ab2fd3675b96c9207fc92a5ffab41ce024a0ace43",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/2fa0efbdb8fb12cfcdbcc876925ccf926232be5b3bdf7e3ca4cb006b3313abf7fffb4c2cafc9dbf8410ab4925c289ec60f839fcaf98f9107e30a696ab2fd3675b96c9207fc92a5ffab41ce024a0ace43",
+                    "width": 60
+                }
+            ],
+            "name": "My Shazam Tracks",
+            "owner": {
+                "display_name": "Paulo Sigrist",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/paulo.sigrist"
+                },
+                "href": "https://api.spotify.com/v1/users/paulo.sigrist",
+                "id": "paulo.sigrist",
+                "type": "user",
+                "uri": "spotify:user:paulo.sigrist"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "MjksNWI0OTAyZDRhZGMwODA4ODY5OTYzNmJhNTllMjJlMTU5MTQxMzYwNg==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/0LfNce4jRfTHuN81LXhPRw/tracks",
+                "total": 27
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:0LfNce4jRfTHuN81LXhPRw"
+        },
+        {
+            "collaborative": false,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/37i9dQZEVXbgwpnC7IwGcl"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZEVXbgwpnC7IwGcl",
+            "id": "37i9dQZEVXbgwpnC7IwGcl",
+            "images": [
+                {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/d8c14b03156b22c195b2f1cafe5c7eac4e7669eb",
+                    "width": 300
+                }
+            ],
+            "name": "Radar de Novidades",
+            "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/spotify"
+                },
+                "href": "https://api.spotify.com/v1/users/spotify",
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MjU4NTY3NjAsMDAwMDAwMDBhNjllMmUxYTg4YjJjYjg1ODRlYzNmZGNhMzUwZDY5Mg==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/37i9dQZEVXbgwpnC7IwGcl/tracks",
+                "total": 30
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZEVXbgwpnC7IwGcl"
+        },
+        {
+            "collaborative": false,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/2jYvt8IZdpr90UauDeccm0"
+            },
+            "href": "https://api.spotify.com/v1/playlists/2jYvt8IZdpr90UauDeccm0",
+            "id": "2jYvt8IZdpr90UauDeccm0",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/1b761558ed527d1caf6630f2abf5eb6a5a8a6e24",
+                    "width": 640
+                }
+            ],
+            "name": "My Shazam Tracks",
+            "owner": {
+                "display_name": "Paulo Sigrist",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/paulo.sigrist"
+                },
+                "href": "https://api.spotify.com/v1/users/paulo.sigrist",
+                "id": "paulo.sigrist",
+                "type": "user",
+                "uri": "spotify:user:paulo.sigrist"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "NCw3ZGRkZDFiOGUwYmYyZmMxYzJlNTE3MDUxYTI2ZGVmMjI1ODczZjE0",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/2jYvt8IZdpr90UauDeccm0/tracks",
+                "total": 2
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:2jYvt8IZdpr90UauDeccm0"
+        },
+        {
+            "collaborative": false,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWVRje2pMSCzM"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVRje2pMSCzM",
+            "id": "37i9dQZF1DWVRje2pMSCzM",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://pl.scdn.co/images/pl/default/9bb2db9524be28cabb4699c770f7e409783f7692",
+                    "width": null
+                }
+            ],
+            "name": "Brasil Anos 80",
+            "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/spotify"
+                },
+                "href": "https://api.spotify.com/v1/users/spotify",
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "MTU1MTc5Nzk2MiwwMDAwMDAxYzAwMDAwMTY2ZjYzMzc3YTkwMDAwMDE2ODkzY2I1M2U5",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVRje2pMSCzM/tracks",
+                "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWVRje2pMSCzM"
+        },
+        {
+            "collaborative": false,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/7sRPFgdCeVtBAukXLNRffz"
+            },
+            "href": "https://api.spotify.com/v1/playlists/7sRPFgdCeVtBAukXLNRffz",
+            "id": "7sRPFgdCeVtBAukXLNRffz",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/3ea2784900be0515e1c0656f9593ce7f46b97bdb",
+                    "width": 640
+                }
+            ],
+            "name": "MPB",
+            "owner": {
+                "display_name": "Paulo Sigrist",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/paulo.sigrist"
+                },
+                "href": "https://api.spotify.com/v1/users/paulo.sigrist",
+                "id": "paulo.sigrist",
+                "type": "user",
+                "uri": "spotify:user:paulo.sigrist"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "OCxlZDk0ZGM0MGVmMmVlYzIzNjFlODFkNGNiNDAxYWRkOWFmYWI0MzI4",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/7sRPFgdCeVtBAukXLNRffz/tracks",
+                "total": 6
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:7sRPFgdCeVtBAukXLNRffz"
+        },
+        {
+            "collaborative": false,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXbOVU4mpMJjh"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXbOVU4mpMJjh",
+            "id": "37i9dQZF1DXbOVU4mpMJjh",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://pl.scdn.co/images/pl/default/55da5256adb6e38bc986266fb634e6a9c17f2a4f",
+                    "width": null
+                }
+            ],
+            "name": "Jazz Relax",
+            "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/spotify"
+                },
+                "href": "https://api.spotify.com/v1/users/spotify",
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "MTU1MTc5Nzk2MiwwMDAwMDAxYzAwMDAwMTY2ZjYzMzc3YmUwMDAwMDE2NmU0MjllOTA0",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXbOVU4mpMJjh/tracks",
+                "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXbOVU4mpMJjh"
+        },
+        {
+            "collaborative": false,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWXx6OpWBkqVv"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWXx6OpWBkqVv",
+            "id": "37i9dQZF1DWXx6OpWBkqVv",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://pl.scdn.co/images/pl/default/9b9dfa8830d1c0643905371b835548ce6baca0dc",
+                    "width": null
+                }
+            ],
+            "name": "Indiespensável",
+            "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/spotify"
+                },
+                "href": "https://api.spotify.com/v1/users/spotify",
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "MTU0ODc1MTczOCwwMDAwMDA0ODAwMDAwMTYzYWM1YzI5Y2EwMDAwMDE2ODk4Y2MxNmZj",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWXx6OpWBkqVv/tracks",
+                "total": 60
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWXx6OpWBkqVv"
+        },
+        {
+            "collaborative": false,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/3M4rFYRkjX0fzJCmbzJycv"
+            },
+            "href": "https://api.spotify.com/v1/playlists/3M4rFYRkjX0fzJCmbzJycv",
+            "id": "3M4rFYRkjX0fzJCmbzJycv",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/c7de2dd4c6df8dc88c68239bc2600ec98fc9ea51",
+                    "width": 640
+                }
+            ],
+            "name": "Jazz Instrumental",
+            "owner": {
+                "display_name": "Paulo Sigrist",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/paulo.sigrist"
+                },
+                "href": "https://api.spotify.com/v1/users/paulo.sigrist",
+                "id": "paulo.sigrist",
+                "type": "user",
+                "uri": "spotify:user:paulo.sigrist"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "NCw5NDQ2ZTJlYTAzZWI0YjU1NDY2N2M0MzJiMGZkNGY0NzNlYjkxOTdh",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/3M4rFYRkjX0fzJCmbzJycv/tracks",
+                "total": 1
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:3M4rFYRkjX0fzJCmbzJycv"
+        },
+        {
+            "collaborative": false,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/0u3rBbYfXDQ5IcBUVbbUHb"
+            },
+            "href": "https://api.spotify.com/v1/playlists/0u3rBbYfXDQ5IcBUVbbUHb",
+            "id": "0u3rBbYfXDQ5IcBUVbbUHb",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/1d288d9e2023ca92fbd8eb910e388067f40af95c25d97b3c2a16de5de5408411442ab0237c3eebaa6fdf90b5a50ce558e085085e9b9c4b4878891882ff758a30372b8529ef135b2ccc8e610a0455d049",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/1d288d9e2023ca92fbd8eb910e388067f40af95c25d97b3c2a16de5de5408411442ab0237c3eebaa6fdf90b5a50ce558e085085e9b9c4b4878891882ff758a30372b8529ef135b2ccc8e610a0455d049",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/1d288d9e2023ca92fbd8eb910e388067f40af95c25d97b3c2a16de5de5408411442ab0237c3eebaa6fdf90b5a50ce558e085085e9b9c4b4878891882ff758a30372b8529ef135b2ccc8e610a0455d049",
+                    "width": 60
+                }
+            ],
+            "name": "Alta Fidelidade - O Livro",
+            "owner": {
+                "display_name": "fredfagundes",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/fredfagundes"
+                },
+                "href": "https://api.spotify.com/v1/users/fredfagundes",
+                "id": "fredfagundes",
+                "type": "user",
+                "uri": "spotify:user:fredfagundes"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "MywzMTE2ODdjYWYyYWZkOWU4NmY3Mjg4OTUyZGI5MjM0YWM4Mjc3YzE4",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/0u3rBbYfXDQ5IcBUVbbUHb/tracks",
+                "total": 74
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:0u3rBbYfXDQ5IcBUVbbUHb"
+        },
+        {
+            "collaborative": false,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/12WFEdqaK7HzLH2CwIb07d"
+            },
+            "href": "https://api.spotify.com/v1/playlists/12WFEdqaK7HzLH2CwIb07d",
+            "id": "12WFEdqaK7HzLH2CwIb07d",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/2caa8d2fface94ee9d58f7005e54384a0fc9c17a530ed499a5f120b7653ff578b8884e22a3fd51b282a71ec19ca044aad463c3ced64ddd7f0094f826d4382516e1a445e5ffaea7e35470b593661d5237",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/2caa8d2fface94ee9d58f7005e54384a0fc9c17a530ed499a5f120b7653ff578b8884e22a3fd51b282a71ec19ca044aad463c3ced64ddd7f0094f826d4382516e1a445e5ffaea7e35470b593661d5237",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/2caa8d2fface94ee9d58f7005e54384a0fc9c17a530ed499a5f120b7653ff578b8884e22a3fd51b282a71ec19ca044aad463c3ced64ddd7f0094f826d4382516e1a445e5ffaea7e35470b593661d5237",
+                    "width": 60
+                }
+            ],
+            "name": "Favoritos",
+            "owner": {
+                "display_name": "Paulo Sigrist",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/paulo.sigrist"
+                },
+                "href": "https://api.spotify.com/v1/users/paulo.sigrist",
+                "id": "paulo.sigrist",
+                "type": "user",
+                "uri": "spotify:user:paulo.sigrist"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MiwxOTNiMDI2NDIxMzZiZjQzNjQ2OWRiYTMwZTFjNDFiYWEwZDZjYjgw",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/12WFEdqaK7HzLH2CwIb07d/tracks",
+                "total": 47
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:12WFEdqaK7HzLH2CwIb07d"
+        }
+    ],
+    "limit": 20,
+    "next": "https://api.spotify.com/v1/users/paulo.sigrist/playlists?offset=20&limit=20",
+    "offset": 0,
+    "previous": null,
+    "total": 36
+}
