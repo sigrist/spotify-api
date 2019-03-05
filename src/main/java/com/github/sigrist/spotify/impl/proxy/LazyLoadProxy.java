@@ -7,47 +7,44 @@ import java.util.List;
 
 import org.apache.commons.lang3.reflect.MethodUtils;
 
+import com.github.sigrist.spotify.SpotifyAPIException;
+
 import lombok.NonNull;
 
 public class LazyLoadProxy<T> implements InvocationHandler {
 
-	private final T lazyLoad;
+	private final T object;
 	private boolean called = false;
 
 	public LazyLoadProxy(@NonNull final T lazyLoad) {
-		this.lazyLoad = lazyLoad;
+		this.object = lazyLoad;
 	}
 
 	@Override
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-		Object result;
-		boolean hasAnnotation = isLazy(method);
-
-		System.out.println("Before " + method.getName());
+		final boolean hasAnnotation = isLazy(method);
 
 		if (hasAnnotation && !called) {
 			call();
 		}
-		result = method.invoke(lazyLoad, args);
-		System.out.println("AFTER  " + method.getName());
-		return result;
+		return method.invoke(object, args);
 	}
 
 	private void call() throws IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 
-		List<Method> methods = MethodUtils.getMethodsListWithAnnotation(lazyLoad.getClass(), LazyMethod.class);
+		final List<Method> methods = MethodUtils.getMethodsListWithAnnotation(object.getClass(), LazyMethod.class);
 		if (methods.size() != 1) {
-			throw new RuntimeException("Only one @LazyMethos is allowed. Found: " + methods.size());
+			throw new SpotifyAPIException("Only one @LazyMethos is allowed. Found: " + methods.size());
 		}
-		Method lazyMethod = methods.get(0);
-		
-		lazyMethod.invoke(lazyLoad);
+		final Method lazyMethod = methods.get(0);
+
+		lazyMethod.invoke(object);
 		called = true;
 	}
 
 	private Boolean isLazy(Method method) throws NoSuchMethodException, SecurityException {
 
-		Method realMethod = lazyLoad.getClass().getMethod(method.getName(), method.getParameterTypes());
+		final Method realMethod = object.getClass().getMethod(method.getName(), method.getParameterTypes());
 
 		return realMethod.isAnnotationPresent(Lazy.class);
 	}

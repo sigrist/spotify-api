@@ -6,58 +6,49 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.github.sigrist.spotify.Me;
 import com.github.sigrist.spotify.impl.feign.MeEndpoint;
 import com.github.sigrist.spotify.impl.proxy.Lazy;
-import com.github.sigrist.spotify.impl.proxy.LazyMethod;
+import com.github.sigrist.spotify.impl.proxy.SpotifyProxy;
 
-public class MeImpl implements Me {
+public class MeImpl extends AbstractSpotifyObject implements Me {
 
 	private final SpotifyInternal spotify;
 	private final MeEndpoint meEndpoint;
 
-	private JsonNode json;
-
 	public static Me instance(final SpotifyInternal spotify) {
-
 		return new SpotifyProxy<MeImpl>(new MeImpl(spotify)).proxy();
 	}
 
 	private MeImpl(final SpotifyInternal spotify) {
 		this.spotify = spotify;
 		this.meEndpoint = this.spotify.build(MeEndpoint.class);
-
 	}
 
-	@LazyMethod
-	public void load() {
-		this.json = this.meEndpoint.me();
-		System.out.println("load");
-
+	@Override
+	protected final JsonNode load() {
+		return this.meEndpoint.me();
 	}
 
 	@Override
 	@Lazy
-	public LocalDate birthDate() {
-		// TODO Auto-generated method stub
-		return null;
+	public final LocalDate birthDate() {
+		return asLocalDate("birthdate");
 	}
 
 	@Override
 	@Lazy
-	public String country() {
-		// TODO Auto-generated method stub
-		return json.get("country").asText();
-	}
-
-	@Override
-	public String displayName() {
-		// TODO Auto-generated method stub
-		return json.get("display_name").asText();
+	public final String country() {
+		return asText("country");
 	}
 
 	@Override
 	@Lazy
-	public String email() {
-		// TODO Auto-generated method stub
-		return null;
+	public final String displayName() {
+		return asText("display_name");
+	}
+
+	@Override
+	@Lazy
+	public final String email() {
+		return asText("email");
 	}
 
 }

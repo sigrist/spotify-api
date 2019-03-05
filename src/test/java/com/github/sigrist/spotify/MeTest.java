@@ -3,6 +3,8 @@ package com.github.sigrist.spotify;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+import java.time.LocalDate;
+
 import org.junit.Rule;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -41,6 +43,8 @@ public class MeTest {
 		
 		assertEquals("BR", me.country());
 		assertEquals("Paulo Sigrist", me.displayName());
+		assertEquals("paulo.sigrist@gmail.com", me.email());
+		assertEquals(LocalDate.of(1979, 5, 25), me.birthDate());
 		this.spotifyServerMock.verifyMe(wireMockRule);
 
 	}

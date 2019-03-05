@@ -1,8 +1,6 @@
-package com.github.sigrist.spotify.impl;
+package com.github.sigrist.spotify.impl.proxy;
 
 import java.lang.reflect.Proxy;
-
-import com.github.sigrist.spotify.impl.proxy.LazyLoadProxy;
 
 public class SpotifyProxy<T> {
 
@@ -13,7 +11,7 @@ public class SpotifyProxy<T> {
 	}
 
 	@SuppressWarnings("unchecked")
-	T proxy() {
+	public T proxy() {
 		return (T) Proxy.newProxyInstance(instance.getClass().getClassLoader(), instance.getClass().getInterfaces(),
 				new LazyLoadProxy<T>(instance));
 	}
