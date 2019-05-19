@@ -1,21 +1,52 @@
 package com.github.sigrist.spotify;
 
+import java.util.HashMap;
 import java.util.Map;
 
-import lombok.Builder;
-import lombok.NonNull;
-import lombok.Singular;
-
-@Builder
 public class SpotifyConfiguration {
 
-	@Singular("configuration")
-	private Map<String, String> configuration;
+	private final Map<String, String> configuration;
 
-	@NonNull
-	private String token;
+	private final String token;
 
-	public final String get(@NonNull final String key, @NonNull final String defaultValue) {
+	private SpotifyConfiguration(final String token, final Map<String, String> configuration) {
+		this.token = token;
+		this.configuration = configuration;
+	}
+
+	public final String get(final String key, final String defaultValue) {
 		return this.configuration.getOrDefault(key, defaultValue);
+	}
+
+	public static SpotifyConfigurationBuilder builder() {
+		return new SpotifyConfigurationBuilder();
+	}
+
+	public String getToken() {
+		return token;
+	}
+
+	public static class SpotifyConfigurationBuilder {
+		private String token;
+		private Map<String, String> configuration = new HashMap<>();
+
+		public final SpotifyConfigurationBuilder token(final String token) {
+			this.token = token;
+			return this;
+		}
+
+		public final SpotifyConfigurationBuilder configuration(Map<String, String> configuration) {
+			this.configuration.putAll(configuration);
+			return this;
+		}
+
+		public final SpotifyConfigurationBuilder configuration(String key, String value) {
+			this.configuration.put(key, value);
+			return this;
+		}
+
+		public final SpotifyConfiguration build() {
+			return new SpotifyConfiguration(token, configuration);
+		}
 	}
 }

@@ -6,25 +6,21 @@ import com.github.sigrist.spotify.SpotifyConfiguration;
 import feign.Feign;
 import feign.jackson.JacksonDecoder;
 import feign.jackson.JacksonEncoder;
-import lombok.Getter;
-import lombok.NonNull;
 
 public class SpotifyImpl implements SpotifyInternal {
 
-	@Getter
 	private final SpotifyConfiguration configuration;
-	
+
 	private final Feign.Builder feignBuilder;
 
-	public SpotifyImpl(@NonNull final SpotifyConfiguration configuration) {
+	public SpotifyImpl(final SpotifyConfiguration configuration) {
 		this.configuration = configuration;
-		this.feignBuilder = Feign.builder().decoder(new JacksonDecoder())
-				.encoder(new JacksonEncoder());
+		this.feignBuilder = Feign.builder().decoder(new JacksonDecoder()).encoder(new JacksonEncoder());
 	}
-	
+
 	@Override
 	public <T> T build(Class<T> clazz) {
-		final String server = this.configuration.get("server", ""); 
+		final String server = this.configuration.get("server", "");
 		return this.feignBuilder.target(clazz, server);
 	}
 
@@ -33,4 +29,7 @@ public class SpotifyImpl implements SpotifyInternal {
 		return MeImpl.instance(this);
 	}
 
+	 public SpotifyConfiguration getConfiguration() {
+		return configuration;
+	}
 }

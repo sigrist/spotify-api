@@ -9,14 +9,12 @@ import org.apache.commons.lang3.reflect.MethodUtils;
 
 import com.github.sigrist.spotify.SpotifyAPIException;
 
-import lombok.NonNull;
-
 public class LazyLoadProxy<T> implements InvocationHandler {
 
 	private final T object;
 	private boolean called = false;
 
-	public LazyLoadProxy(@NonNull final T lazyLoad) {
+	public LazyLoadProxy(final T lazyLoad) {
 		this.object = lazyLoad;
 	}
 

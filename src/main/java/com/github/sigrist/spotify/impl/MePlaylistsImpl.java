@@ -12,8 +12,6 @@ import com.github.sigrist.spotify.impl.feign.PlaylistEndpoint;
 import com.github.sigrist.spotify.impl.proxy.Lazy;
 import com.github.sigrist.spotify.impl.proxy.SpotifyProxy;
 
-import lombok.NonNull;
-
 public class MePlaylistsImpl extends AbstractSpotifyObject implements Playlists {
 	private final SpotifyInternal spotify;
 	private final PlaylistEndpoint playlistEndpoint;
@@ -37,7 +35,10 @@ public class MePlaylistsImpl extends AbstractSpotifyObject implements Playlists 
 		return Collections.emptyIterator();
 	}
 
-	private List<Playlist> processItems(@NonNull final JsonNode items) {
+	private List<Playlist> processItems( final JsonNode items) {
+		// TODO Aqui vai percorrer a paginacao sozinho? 
+		// TODO Criar uma implementacao abstrata para isso?
+		
 		final List<Playlist> list = new ArrayList<>();
 		for (final JsonNode item : items) {
 			list.add(PlaylistJsonImpl.instance(spotify, item));

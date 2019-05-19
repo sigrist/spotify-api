@@ -5,8 +5,6 @@ import com.github.sigrist.spotify.Playlist;
 import com.github.sigrist.spotify.impl.proxy.Lazy;
 import com.github.sigrist.spotify.impl.proxy.SpotifyProxy;
 
-import lombok.NonNull;
-
 public class PlaylistJsonImpl extends AbstractSpotifyObject implements Playlist {
 
 	private final JsonNode json;
@@ -17,7 +15,7 @@ public class PlaylistJsonImpl extends AbstractSpotifyObject implements Playlist 
 		return new SpotifyProxy<PlaylistJsonImpl>(new PlaylistJsonImpl(spotify, json)).proxy();
 	}
 
-	private PlaylistJsonImpl(@NonNull final SpotifyInternal spotify, final @NonNull JsonNode json) {
+	private PlaylistJsonImpl(final SpotifyInternal spotify, final JsonNode json) {
 		this.spotify = spotify;
 		this.json = json;
 	}
@@ -32,11 +30,11 @@ public class PlaylistJsonImpl extends AbstractSpotifyObject implements Playlist 
 	public Boolean collaborative() {
 		return asBoolean("collaborative");
 	}
-	
+
 	@Override
 	@Lazy
 	public String name() {
 		return asText("name");
 	}
-	
+
 }
