@@ -9,7 +9,8 @@ public interface Me {
 	String displayName();
 	String email();
 	
-	// TODO
+	// @todo #7 Add other fields.
+	
 	// external URL
 	// followers
 	// href
@@ -17,7 +18,7 @@ public interface Me {
 	// images
 	// product
 	// type
-	// uri
+	// uri.
 	
 	Playlists playlists();
 }
