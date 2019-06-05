@@ -3,6 +3,11 @@ package com.github.sigrist.spotify;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @todo remove builder to construct the SpotifyCOnfiguration
+ * @author sigrist
+ *
+ */
 public class SpotifyConfiguration {
 
 	private final Map<String, String> configuration;
