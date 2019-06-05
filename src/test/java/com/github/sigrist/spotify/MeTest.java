@@ -22,8 +22,10 @@ public class MeTest {
 
 	@BeforeEach
 	public void init() {
-		SpotifyConfiguration configuration = SpotifyConfiguration.builder().token("abc")
-				.configuration("server", "http://localhost:8089").build();
+		SpotifyConfiguration configuration = SpotifyConfiguration.builder()
+				.token("abc")
+				.server("http://localhost:8089")
+				.build();
 		spotify = Spotify.instance(configuration);
 
 		this.wireMockRule.start();
