@@ -9,7 +9,7 @@ import java.util.Map;
  * 
  */
 /*
- * @todo #7 This is something to do later
+ * @xtodo #7 This is something to do later
  *  in one of the next releases. I can't figure out
  *  how to implement it now, that's why the puzzle.
  */public class SpotifyConfiguration {
