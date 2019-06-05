@@ -4,9 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @todo #1 remove builder to construct the SpotifyCOnfiguration
+ * @todo #1 remove builder to construct the SpotifyConfiguration
  * @author sigrist
- *
+ * 
  */
 public class SpotifyConfiguration {
 
