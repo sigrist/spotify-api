@@ -77,7 +77,7 @@ public class SpotifyConfiguration {
 	 */
 	public static class SpotifyConfigurationBuilder {
 		private String token;
-		private String server;
+		private String server ="https://api.spotify.com";
 		private Map<String, String> configuration = new HashMap<>();
 
 		public final SpotifyConfigurationBuilder token(final String token) {
