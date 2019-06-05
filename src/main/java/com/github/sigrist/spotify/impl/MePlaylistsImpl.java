@@ -36,8 +36,8 @@ public class MePlaylistsImpl extends AbstractSpotifyObject implements Playlists 
 	}
 
 	private List<Playlist> processItems( final JsonNode items) {
-		// @todo #7 Aqui vai percorrer a paginacao sozinho.
-		// @todo #7 Criar uma implementacao abstrata para isso.
+		// @xtodo #7 Aqui vai percorrer a paginacao sozinho.
+		// @xtodo #7 Criar uma implementacao abstrata para isso.
 		
 		final List<Playlist> list = new ArrayList<>();
 		for (final JsonNode item : items) {
