@@ -37,41 +37,6 @@
             "uri": "spotify:playlist:37i9dQZF1DWY6vTWIdZ54A"
         },
         {
-            "collaborative": true,
-            "external_urls": {
-                "spotify": "https://open.spotify.com/playlist/59UsEU4WD961XJMuSDHXHA"
-            },
-            "href": "https://api.spotify.com/v1/playlists/59UsEU4WD961XJMuSDHXHA",
-            "id": "59UsEU4WD961XJMuSDHXHA",
-            "images": [
-                {
-                    "height": null,
-                    "url": "https://pl.scdn.co/images/pl/default/8ec0acc5094a18ed6e4c3de70823e50e1a4ca465",
-                    "width": null
-                }
-            ],
-            "name": "Dom ROCK",
-            "owner": {
-                "display_name": "jeh.ajdo",
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/user/jeh.ajdo"
-                },
-                "href": "https://api.spotify.com/v1/users/jeh.ajdo",
-                "id": "jeh.ajdo",
-                "type": "user",
-                "uri": "spotify:user:jeh.ajdo"
-            },
-            "primary_color": null,
-            "public": false,
-            "snapshot_id": "NTUsZDdjM2I3NDQ0MTQ1Y2U4YzlmZTdhOWQ1MTAzOGNiNmU4YzMxOWJkMg==",
-            "tracks": {
-                "href": "https://api.spotify.com/v1/playlists/59UsEU4WD961XJMuSDHXHA/tracks",
-                "total": 30
-            },
-            "type": "playlist",
-            "uri": "spotify:playlist:59UsEU4WD961XJMuSDHXHA"
-        },
-        {
             "collaborative": false,
             "external_urls": {
                 "spotify": "https://open.spotify.com/playlist/1NveipTfip7xmnNWzswLJk"

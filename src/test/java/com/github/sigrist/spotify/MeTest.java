@@ -53,15 +53,15 @@ public class MeTest {
 	}
 
 	@Test
-	@DisplayName("Test if the me playlist if ok")
+	@DisplayName("Test if the me playlist is ok")
 	public void testMePlaylist() {
 		// Simulate /me/playlists
 		this.spotifyServerMock.mePlaylists020(wireMockRule);
 		
-		Me me = spotify.me();
-		Playlists playlists = me.playlists();
+		final Me me = spotify.me();
+		final Playlists playlists = me.playlists();
 
-		Iterator<Playlist> iterator = playlists.iterator();
+		final Iterator<Playlist> iterator = playlists.iterator();
 		
 		assertNotNull(me);
 		assertNotNull(playlists);
@@ -72,11 +72,46 @@ public class MeTest {
 		assertEquals(36, playlists.total());
 		this.spotifyServerMock.verifyMePlaylists020(wireMockRule);
 		
-		final Playlist playlist = iterator.next();
+		Playlist playlist = iterator.next();
 		assertNotNull(playlist);
 		assertTrue(iterator.hasNext());
 		
 		assertEquals("Dirty Rock", playlist.name());
 		assertFalse(playlist.collaborative());
+
+		// Item 2	
+		playlist = iterator.next();
+		assertNotNull(playlist);
+		assertTrue(iterator.hasNext());
+		
+		assertEquals("blues", playlist.name());
+		assertFalse(playlist.collaborative());
+
+		// Item 3	
+		playlist = iterator.next();
+		assertNotNull(playlist);
+		assertTrue(iterator.hasNext());
+		              
+		assertEquals("Suits: All Seasons (Soundtrack)", playlist.name());
+		assertFalse(playlist.collaborative());
+
+		// Item 4	
+		playlist = iterator.next();
+		assertNotNull(playlist);
+		assertTrue(iterator.hasNext());
+		              
+		assertEquals("Mindhunter Soundtrack Season 2 (Netflix)", playlist.name());
+		assertFalse(playlist.collaborative());
+
+		// Check for all other items
+		for (int i = 4; i<18; i++) {
+			playlist = iterator.next();
+			assertNotNull(playlist);
+			assertTrue(iterator.hasNext());
+		}
+		playlist = iterator.next();
+		assertNotNull(playlist);
+		assertFalse(iterator.hasNext());
+
 	}
 }

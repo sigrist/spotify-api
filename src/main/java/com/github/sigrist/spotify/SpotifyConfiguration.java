@@ -8,9 +8,12 @@ public class SpotifyConfiguration {
 	private final Map<String, String> configuration;
 
 	private final String token;
+	
+	private final String server;
 
-	private SpotifyConfiguration(final String token, final Map<String, String> configuration) {
+	private SpotifyConfiguration(final String token, final String server, final Map<String, String> configuration) {
 		this.token = token;
+		this.server = server;
 		this.configuration = configuration;
 	}
 
@@ -25,13 +28,23 @@ public class SpotifyConfiguration {
 	public String getToken() {
 		return token;
 	}
+	
+	public String getServer() {
+		return server;
+	}
 
 	public static class SpotifyConfigurationBuilder {
 		private String token;
+		private String server;
 		private Map<String, String> configuration = new HashMap<>();
 
 		public final SpotifyConfigurationBuilder token(final String token) {
 			this.token = token;
+			return this;
+		}
+
+		public final SpotifyConfigurationBuilder server(final String server) {
+			this.server = server;
 			return this;
 		}
 
@@ -46,7 +59,7 @@ public class SpotifyConfiguration {
 		}
 
 		public final SpotifyConfiguration build() {
-			return new SpotifyConfiguration(token, configuration);
+			return new SpotifyConfiguration(token, server, configuration);
 		}
 	}
 }
