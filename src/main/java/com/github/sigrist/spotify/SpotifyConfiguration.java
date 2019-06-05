@@ -8,7 +8,7 @@ import java.util.Map;
  * @author sigrist
  * 
  */
-// @todo #2 remove builder to construct the SpotifyConfiguration.
+// @todo #2:30m/DEV remove builder to construct the SpotifyConfiguration.
 public class SpotifyConfiguration {
 
 	private final Map<String, String> configuration;
