@@ -28,5 +28,9 @@ public class PlaylistJsonImpl extends AbstractSpotifyObject implements Playlist 
 	public String name() {
 		return asText("name");
 	}
+	
+	public SpotifyInternal spotify() {
+		return spotify;
+	}
 
 }
