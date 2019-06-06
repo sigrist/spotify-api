@@ -6,19 +6,13 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.github.sigrist.spotify.Me;
 import com.github.sigrist.spotify.Playlists;
 import com.github.sigrist.spotify.impl.feign.MeEndpoint;
-import com.github.sigrist.spotify.impl.proxy.Lazy;
-import com.github.sigrist.spotify.impl.proxy.SpotifyProxy;
 
 public class MeImpl extends AbstractSpotifyObject implements Me {
 
 	private final SpotifyInternal spotify;
 	private final MeEndpoint meEndpoint;
 
-	public static Me instance(final SpotifyInternal spotify) {
-		return new SpotifyProxy<MeImpl>(new MeImpl(spotify)).proxy();
-	}
-
-	private MeImpl(final SpotifyInternal spotify) {
+	public MeImpl(final SpotifyInternal spotify) {
 		this.spotify = spotify;
 		this.meEndpoint = this.spotify.build(MeEndpoint.class);
 	}
@@ -29,32 +23,28 @@ public class MeImpl extends AbstractSpotifyObject implements Me {
 	}
 
 	@Override
-	@Lazy
 	public final LocalDate birthDate() {
 		return asLocalDate("birthdate");
 	}
 
 	@Override
-	@Lazy
 	public final String country() {
 		return asText("country");
 	}
 
 	@Override
-	@Lazy
 	public final String displayName() {
 		return asText("display_name");
 	}
 
 	@Override
-	@Lazy
 	public final String email() {
 		return asText("email");
 	}
 
 	@Override
 	public final Playlists playlists() {
-		return MePlaylistsImpl.instance(this.spotify);
+		return new MePlaylistsImpl(this.spotify);
 	}
 
 }

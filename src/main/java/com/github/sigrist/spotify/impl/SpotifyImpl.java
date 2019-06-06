@@ -26,7 +26,7 @@ public class SpotifyImpl implements SpotifyInternal {
 
 	@Override
 	public Me me() {
-		return MeImpl.instance(this);
+		return new MeImpl(this);
 	}
 
 	 public SpotifyConfiguration getConfiguration() {

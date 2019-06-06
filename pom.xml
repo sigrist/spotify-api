@@ -37,6 +37,13 @@
 			<version>3.9</version>
 		</dependency>
 
+		<!-- Cactoos -->
+		<dependency>
+			<groupId>org.cactoos</groupId>
+			<artifactId>cactoos</artifactId>
+			<version>0.41</version>
+		</dependency>
+
 		<!-- Junit 5 -->
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>

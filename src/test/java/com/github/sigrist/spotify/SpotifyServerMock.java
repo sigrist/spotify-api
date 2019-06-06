@@ -15,7 +15,7 @@ public class SpotifyServerMock {
 	}
 
 	public void verifyMe(final WireMockRule rule) {
-		rule.verify(getRequestedFor(urlMatching("/v1/me"))
+		rule.verify(1, getRequestedFor(urlMatching("/v1/me"))
 		//		.withHeader("Content-Type", equalTo("application/json"))
 				)
 		;
