@@ -9,5 +9,7 @@ module com.github.sigrist.spotify {
 	
 	requires org.apache.commons.lang3;
 	
+	requires cactoos;
+	
 	
 }
