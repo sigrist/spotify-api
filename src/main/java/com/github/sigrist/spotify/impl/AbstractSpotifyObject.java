@@ -10,7 +10,7 @@ import com.github.sigrist.spotify.FieldNotFoundException;
 
 public abstract class AbstractSpotifyObject {
 
-	// todo #21 Remove the Unchecked and do proper exception handling
+	// @todo #21 Remove the Unchecked and do proper exception handling
 	private final Unchecked<JsonNode> scalar;
 	
 	public AbstractSpotifyObject() {
