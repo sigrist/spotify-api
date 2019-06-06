@@ -1,7 +1,6 @@
 # Spotify API
 
 ![PDD](http://www.0pdd.com/svg?name=sigrist/spotify-api)
-
 [![Build Status](https://travis-ci.org/sigrist/spotify-api.svg?branch=master)](https://travis-ci.org/sigrist/spotify-api)
 
 
