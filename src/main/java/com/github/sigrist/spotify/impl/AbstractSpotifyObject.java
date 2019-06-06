@@ -12,13 +12,13 @@ public abstract class AbstractSpotifyObject {
 
 	// @todo #21 Remove the Unchecked and do proper exception handling
 	private final Unchecked<JsonNode> scalar;
-	
+
 	public AbstractSpotifyObject() {
 		this.scalar = new Unchecked<>(new Sticky<>(() -> {
 			return load();
 		}));
 	}
-	
+
 	protected abstract JsonNode load();
 
 	private JsonNode loadJson() {
@@ -52,7 +52,8 @@ public abstract class AbstractSpotifyObject {
 		final JsonNode json = loadJson();
 		if (json != null && json.has(fieldName)) {
 			return json.get(fieldName);
-		} else
+		} else {
 			throw new FieldNotFoundException(fieldName, json);
+		}
 	}
 }
