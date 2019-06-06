@@ -7,8 +7,6 @@ module com.github.sigrist.spotify {
 	requires feign.core;
 	requires feign.jackson;
 	
-	requires org.apache.commons.lang3;
-	
 	requires cactoos;
 	
 	
