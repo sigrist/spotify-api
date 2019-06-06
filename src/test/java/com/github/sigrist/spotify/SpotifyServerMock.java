@@ -11,7 +11,7 @@ public class SpotifyServerMock {
 				//.withHeader("Content-Type", equalTo("application/json"))
 				//.withHeader("Authorization", equalTo("Bearer xyz"))
 				.willReturn(aResponse().withStatus(200).withHeader("Content-Type", "application/json")
-						.withBody(new Resource("/me/me.json").toString())));
+						.withBody(new Resource("me/me.json").toString())));
 	}
 
 	public void verifyMe(final WireMockRule rule) {
@@ -27,7 +27,7 @@ public class SpotifyServerMock {
 				//.withHeader("Content-Type", equalTo("application/json"))
 				//.withHeader("Authorization", equalTo("Bearer xyz"))
 				.willReturn(aResponse().withStatus(200).withHeader("Content-Type", "application/json")
-						.withBody(new Resource("/me/me-playlists-0-20.json").toString())));
+						.withBody(new Resource("me/me-playlists-0-20.json").toString())));
 	}
 
 	public void verifyMePlaylists020(final WireMockRule rule) {

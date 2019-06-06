@@ -1,6 +1,7 @@
 package com.github.sigrist.spotify;
 
 import java.io.IOException;
+import java.net.URL;
 import java.nio.charset.Charset;
 
 import org.apache.commons.io.IOUtils;
@@ -16,7 +17,8 @@ public class Resource {
 	@Override
 	public String toString() {
 		try {
-			return IOUtils.resourceToString(resource, Charset.defaultCharset());
+			final URL url = this.getClass().getResource(resource);
+			return IOUtils.toString(url, Charset.defaultCharset());
 		} catch (IOException e) {
 			throw new RuntimeException("Error loading resource", e);
 		}
