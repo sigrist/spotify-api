@@ -8,7 +8,7 @@ public interface SpotifyConfiguration {
 
     /**
      * Get a configuration value or the default value if not found.
-     * @param key          The configuration key.
+     * @param key The configuration key.
      * @param defaultValue The default value if not found.
      * @return The value or the default value.
      */

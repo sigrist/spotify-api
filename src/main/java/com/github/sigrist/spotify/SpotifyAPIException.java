@@ -15,7 +15,7 @@ public class SpotifyAPIException extends RuntimeException {
     /**
      * Full constructor.
      * @param message The exception message.
-     * @param cause   The root cause.
+     * @param cause The root cause.
      */
     public SpotifyAPIException(final String message, final Throwable cause) {
         super(message, cause);

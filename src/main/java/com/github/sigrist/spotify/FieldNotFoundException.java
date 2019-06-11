@@ -23,7 +23,7 @@ public class FieldNotFoundException extends SpotifyAPIException {
     /**
      * Full constructor.
      * @param fieldName The field name to get.
-     * @param json      The original JSON response from the API.
+     * @param json The original JSON response from the API.
      */
     public FieldNotFoundException(final String fieldName, final JsonNode json) {
         super("The field '" + fieldName + "' does not exist.");

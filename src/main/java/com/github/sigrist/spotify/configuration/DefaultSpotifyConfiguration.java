@@ -21,7 +21,7 @@ public class DefaultSpotifyConfiguration implements SpotifyConfiguration {
 
     /**
      * Returns the default value.
-     * @param key          The configuration key.
+     * @param key The configuration key.
      * @param defaultValue The default value if not found.
      * @return Always the defaultValue
      */
