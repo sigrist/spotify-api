@@ -4,5 +4,5 @@ import com.github.sigrist.spotify.Spotify;
 
 public interface SpotifyInternal extends Spotify {
 
-	<T> T build(Class<T> clazz);
+    <T> T build(Class<T> clazz);
 }

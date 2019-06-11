@@ -2,6 +2,7 @@ package com.github.sigrist.spotify;
 
 public interface Playlist {
 
-	Boolean collaborative();
-	String name();
+    Boolean collaborative();
+
+    String name();
 }
