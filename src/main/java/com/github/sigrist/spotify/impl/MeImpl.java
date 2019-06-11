@@ -37,11 +37,6 @@ import java.time.LocalDate;
 public class MeImpl extends AbstractSpotifyObject implements Me {
 
     /**
-     * The {@link SpotifyInternal} instance.
-     */
-    private final SpotifyInternal spotify;
-
-    /**
      * The {@link MeEndpoint} instance.
      */
     private final MeEndpoint endpoint;
@@ -51,33 +46,33 @@ public class MeImpl extends AbstractSpotifyObject implements Me {
      * @param spotify The {@link SpotifyInternal} instance.
      */
     public MeImpl(final SpotifyInternal spotify) {
-        this.spotify = spotify;
-        this.endpoint = this.spotify.build(MeEndpoint.class);
+        super(spotify);
+        this.endpoint = this.getSpotify().build(MeEndpoint.class);
     }
 
     @Override
     public final LocalDate birthDate() {
-        return asLocalDate("birthdate");
+        return this.asLocalDate("birthdate");
     }
 
     @Override
     public final String country() {
-        return asText("country");
+        return this.asText("country");
     }
 
     @Override
     public final String displayName() {
-        return asText("display_name");
+        return this.asText("display_name");
     }
 
     @Override
     public final String email() {
-        return asText("email");
+        return this.asText("email");
     }
 
     @Override
     public final Playlists playlists() {
-        return new MePlaylistsImpl(this.spotify);
+        return new MePlaylistsImpl(this.getSpotify());
     }
 
     @Override

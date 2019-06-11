@@ -43,9 +43,17 @@ public abstract class AbstractSpotifyObject {
     private final Unchecked<JsonNode> scalar;
 
     /**
-     * Default constructor.
+     * The {@link SpotifyInternal} implementation.
      */
-    public AbstractSpotifyObject() {
+    private final SpotifyInternal spotify;
+    
+    /**
+     * Default constructor.
+     * 
+     * @param spotify The {@link SpotifyInternal} implementation.
+     */
+    public AbstractSpotifyObject(final SpotifyInternal spotify) {
+        this.spotify = spotify;
         this.scalar = new Unchecked<>(new Sticky<>(() -> {
             return this.load();
         }));
@@ -116,5 +124,13 @@ public abstract class AbstractSpotifyObject {
         } else {
             throw new FieldNotFoundException(field, json);
         }
+    }
+    
+    /**
+     * Get the {@link SpotifyInternal} instance.
+     * @return The instance.
+     */
+    protected final SpotifyInternal getSpotify() {
+        return spotify;
     }
 }

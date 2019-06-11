@@ -38,11 +38,6 @@ import java.util.List;
 public final class MePlaylistsImpl extends AbstractSpotifyObject implements Playlists {
 
     /**
-     * The {@link SpotifyInternal} implementation.
-     */
-    private final SpotifyInternal spotify;
-
-    /**
      * The {@link PlaylistEndpoint} implementation.
      */
     private final PlaylistEndpoint endpoint;
@@ -57,8 +52,8 @@ public final class MePlaylistsImpl extends AbstractSpotifyObject implements Play
      * @param spotify The {@link SpotifyInternal} implementation.
      */
     public MePlaylistsImpl(final SpotifyInternal spotify) {
-        this.spotify = spotify;
-        this.endpoint = this.spotify.build(PlaylistEndpoint.class);
+        super(spotify);
+        this.endpoint = spotify.build(PlaylistEndpoint.class);
         this.playlist = new LinkedList<>();
     }
 
@@ -102,7 +97,7 @@ public final class MePlaylistsImpl extends AbstractSpotifyObject implements Play
      */
     private void processItems(final JsonNode items) {
         for (final JsonNode item : items) {
-            this.playlist.add(new PlaylistJsonImpl(this.spotify, item));
+            this.playlist.add(new PlaylistJsonImpl(this.getSpotify(), item));
         }
     }
 
