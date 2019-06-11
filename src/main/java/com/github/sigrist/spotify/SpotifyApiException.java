@@ -21,7 +21,34 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+package com.github.sigrist.spotify;
+
 /**
- * Configuration implementations for Spotify API.
+ * Exception for any error in the API.
+ * @since 1.0.0
  */
-package com.github.sigrist.spotify.configuration;
+public class SpotifyApiException extends RuntimeException {
+
+    /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 6677780727301277421L;
+
+    /**
+     * Full constructor.
+     * @param message The exception message.
+     * @param cause The root cause.
+     */
+    public SpotifyApiException(final String message, final Throwable cause) {
+        super(message, cause);
+    }
+
+    /**
+     * Simple constructor.
+     * @param message The exception message.
+     */
+    public SpotifyApiException(final String message) {
+        super(message);
+    }
+
+}

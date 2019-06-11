@@ -34,8 +34,8 @@ public interface SpotifyInternal extends Spotify {
 
     /**
      * Build a feign instance.
-     * @param T the class type.
      * @param clazz The class name.
+     * @param <T> The class type.
      * @return The instrumented class instance.
      */
     <T> T build(Class<T> clazz);

@@ -53,9 +53,12 @@ public abstract class AbstractSpotifyObject {
      */
     public AbstractSpotifyObject(final SpotifyInternal spotify) {
         this.spotify = spotify;
-        this.scalar = new Unchecked<>(new Sticky<>(() -> {
-            return this.load();
-        }));
+        this.scalar = new Unchecked<>(
+            new Sticky<>(
+                () -> {
+                    return this.load();
+                })
+        );
     }
 
     /**

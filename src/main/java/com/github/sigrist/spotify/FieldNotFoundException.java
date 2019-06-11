@@ -30,7 +30,7 @@ import com.fasterxml.jackson.databind.JsonNode;
  * not exist.
  * @since 1.0.0
  */
-public class FieldNotFoundException extends SpotifyAPIException {
+public class FieldNotFoundException extends SpotifyApiException {
 
     /**
      * The serial version UID.
