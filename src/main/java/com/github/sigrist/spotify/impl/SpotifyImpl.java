@@ -58,7 +58,7 @@ public final class SpotifyImpl implements SpotifyInternal {
 
     @Override
     public <T> T build(final Class<T> clazz) {
-        final String server = this.conf.server();
+        final String server = this.conf.getServer();
         return this.builder.target(clazz, server);
     }
 

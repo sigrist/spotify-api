@@ -25,7 +25,7 @@ public class SpotifyAPIException extends RuntimeException {
      * Simple constructor.
      * @param message The exception message.
      */
-    public SpotifyAPIException(String message) {
+    public SpotifyAPIException(final String message) {
         super(message);
     }
 

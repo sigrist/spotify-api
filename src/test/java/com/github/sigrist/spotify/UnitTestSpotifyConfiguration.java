@@ -18,7 +18,7 @@ public class UnitTestSpotifyConfiguration implements SpotifyConfiguration {
      * Returns the value `defaultToken`.
      */
     @Override
-    public String token() {
+    public String getToken() {
         return "defaultToken";
     }
 
@@ -26,7 +26,7 @@ public class UnitTestSpotifyConfiguration implements SpotifyConfiguration {
      * Returns the value `http://localhost:8089`.
      */
     @Override
-    public String server() {
+    public String getServer() {
         return "http://localhost:8089";
     }
 
