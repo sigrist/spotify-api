@@ -1,7 +1,11 @@
 package com.github.sigrist.spotify;
 
+import static com.github.tomakehurst.wiremock.client.WireMock.aResponse;
+import static com.github.tomakehurst.wiremock.client.WireMock.get;
+import static com.github.tomakehurst.wiremock.client.WireMock.getRequestedFor;
+import static com.github.tomakehurst.wiremock.client.WireMock.urlEqualTo;
+import static com.github.tomakehurst.wiremock.client.WireMock.urlMatching;
 import com.github.tomakehurst.wiremock.junit.WireMockRule;
-import static com.github.tomakehurst.wiremock.client.WireMock.*;
 
 public class SpotifyServerMock {
 

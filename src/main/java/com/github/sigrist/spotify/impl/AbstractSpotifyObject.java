@@ -1,10 +1,10 @@
 package com.github.sigrist.spotify.impl;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.github.sigrist.spotify.FieldNotFoundException;
 import java.time.LocalDate;
 import org.cactoos.scalar.Sticky;
 import org.cactoos.scalar.Unchecked;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.github.sigrist.spotify.FieldNotFoundException;
 
 public abstract class AbstractSpotifyObject {
 

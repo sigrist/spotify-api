@@ -1,12 +1,12 @@
 package com.github.sigrist.spotify.impl;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.github.sigrist.spotify.Playlist;
 import com.github.sigrist.spotify.Playlists;
 import com.github.sigrist.spotify.impl.feign.PlaylistEndpoint;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class MePlaylistsImpl extends AbstractSpotifyObject implements Playlists {
     private final SpotifyInternal spotify;
