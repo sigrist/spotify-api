@@ -20,7 +20,7 @@ public class SpotifyImpl implements SpotifyInternal {
 
 	@Override
 	public <T> T build(Class<T> clazz) {
-		final String server = this.configuration.getServer();
+		final String server = this.configuration.server();
 		return this.feignBuilder.target(clazz, server);
 	}
 

@@ -11,7 +11,7 @@ public class SpotifyAPITest {
 	@Test
 	@DisplayName("Test to check the API instantiation")
 	public void testCreateAPI() {
-		SpotifyConfiguration configuration = SpotifyConfiguration.builder().token("abv").build();
+		SpotifyConfiguration configuration = new UnitTestSpotifyConfiguration();
 		Spotify spotify = Spotify.instance(configuration);
 
 		assertNotNull(spotify);
