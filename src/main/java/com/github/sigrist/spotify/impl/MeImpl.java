@@ -18,7 +18,7 @@ public class MeImpl extends AbstractSpotifyObject implements Me {
 
     @Override
     protected final JsonNode load() {
-        return this.meEndpoint.me();
+        return this.meEndpoint.user();
     }
 
     @Override
