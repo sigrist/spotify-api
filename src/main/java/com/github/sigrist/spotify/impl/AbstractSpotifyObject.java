@@ -46,10 +46,9 @@ public abstract class AbstractSpotifyObject {
      * The {@link SpotifyInternal} implementation.
      */
     private final SpotifyInternal spotify;
-    
+
     /**
      * Default constructor.
-     * 
      * @param spotify The {@link SpotifyInternal} implementation.
      */
     public AbstractSpotifyObject(final SpotifyInternal spotify) {
@@ -112,9 +111,17 @@ public abstract class AbstractSpotifyObject {
     }
 
     /**
+     * Get the {@link SpotifyInternal} instance.
+     * @return The instance.
+     */
+    protected final SpotifyInternal getSpotify() {
+        return this.spotify;
+    }
+
+    /**
      * Extracts the field from the original JSON node.
      * @param field The field name.
-     * @return The fieldn as JsonNode.
+     * @return The field as JsonNode.
      * @throws FieldNotFoundException when the field does not exist.
      */
     private JsonNode jsonNode(final String field) {
@@ -125,12 +132,5 @@ public abstract class AbstractSpotifyObject {
             throw new FieldNotFoundException(field, json);
         }
     }
-    
-    /**
-     * Get the {@link SpotifyInternal} instance.
-     * @return The instance.
-     */
-    protected final SpotifyInternal getSpotify() {
-        return spotify;
-    }
+
 }
