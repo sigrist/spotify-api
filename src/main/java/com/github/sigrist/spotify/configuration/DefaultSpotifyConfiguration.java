@@ -26,7 +26,9 @@ package com.github.sigrist.spotify.configuration;
 import com.github.sigrist.spotify.SpotifyConfiguration;
 
 /**
- * Default configuration.
+ * Default configuration. The method {@link #getServer()} always returns
+ * `https://api.spotify.com` and the method {@link #get(String, String)} always
+ * returns the default value.
  * @since 1.0.0
  */
 public final class DefaultSpotifyConfiguration implements SpotifyConfiguration {
@@ -44,12 +46,6 @@ public final class DefaultSpotifyConfiguration implements SpotifyConfiguration {
         this.token = token;
     }
 
-    /**
-     * Returns the default value.
-     * @param key The configuration key.
-     * @param def The default value if not found.
-     * @return Always the defaultValue
-     */
     @Override
     public String get(final String key, final String def) {
         return def;
@@ -57,7 +53,7 @@ public final class DefaultSpotifyConfiguration implements SpotifyConfiguration {
 
     @Override
     public String getToken() {
-        return token;
+        return this.token;
     }
 
     @Override
