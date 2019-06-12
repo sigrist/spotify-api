@@ -53,7 +53,7 @@ public class FieldNotFoundException extends SpotifyApiException {
      * @param json The original JSON response from the API.
      */
     public FieldNotFoundException(final String field, final JsonNode json) {
-        super(String.format("The field '%1' does not exist.", field));
+        super(String.format("The field '{0}' does not exist.", field));
         this.field = field;
         this.json = json;
     }
