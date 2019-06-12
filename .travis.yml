@@ -5,9 +5,10 @@ jdk:
   
 
 addons:
-  sonarqube:
-    organization: "sigrist-github" 
+  sonarcloud:
+    projectKey: "spotify-ap"
+    organization: "sigrist-github"
+    login: $TRAVIS_KEY 
 
 script:
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install 
-  # sonar:sonar
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar

@@ -106,7 +106,7 @@
 				<version>2.22.1</version>
 			</plugin>
 
-			<!-- Qulice -->
+			<!-- Qulice 
 			<plugin>
 				<groupId>com.qulice</groupId>
 				<artifactId>qulice-maven-plugin</artifactId>
@@ -121,6 +121,7 @@
 					</execution>
 				</executions>
 			</plugin>
+			-->
 		</plugins>
 	</build>
 
