@@ -40,7 +40,7 @@ public class FieldNotFoundException extends SpotifyApiException {
     /**
      * The original JSON object.
      */
-    private final JsonNode json;
+    private transient final JsonNode json;
 
     /**
      * The field name.
