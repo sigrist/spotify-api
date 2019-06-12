@@ -26,6 +26,7 @@ package com.github.sigrist.spotify.impl;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.github.sigrist.spotify.FieldNotFoundException;
 import java.time.LocalDate;
+import org.cactoos.Scalar;
 import org.cactoos.scalar.Sticky;
 import org.cactoos.scalar.Unchecked;
 
@@ -34,7 +35,7 @@ import org.cactoos.scalar.Unchecked;
  * easy get get the field values.
  * @since 1.0.0
  */
-public abstract class AbstractSpotifyObject {
+public abstract class AbstractSpotifyObject implements Scalar<JsonNode> {
 
     // @todo #21 Remove the Unchecked and do proper exception handling
     /**
@@ -53,14 +54,14 @@ public abstract class AbstractSpotifyObject {
      */
     public AbstractSpotifyObject(final SpotifyInternal spotify) {
         this.spotify = spotify;
-        this.scalar = new Unchecked<>(
-            new Sticky<>(
-                () -> {
-                    return this.load();
-                })
-        );
+        final Sticky<JsonNode> sticky = new Sticky<>(this);
+        this.scalar = new Unchecked<>(sticky);
     }
 
+    @Override
+    public JsonNode value() throws Exception {
+        return this.load();
+    }
     /**
      * Method be implemented in the subclasses to get the JsonNode from the API.
      * @return The JsonNode from the API.
