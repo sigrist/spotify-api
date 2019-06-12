@@ -40,7 +40,7 @@ public class FieldNotFoundException extends SpotifyApiException {
     /**
      * The original JSON object.
      */
-    private transient final JsonNode json;
+    private final transient JsonNode json;
 
     /**
      * The field name.
@@ -53,7 +53,7 @@ public class FieldNotFoundException extends SpotifyApiException {
      * @param json The original JSON response from the API.
      */
     public FieldNotFoundException(final String field, final JsonNode json) {
-        super(String.format("The field '{0}' does not exist.", field));
+        super("The field '" + field + "' does not exist.");
         this.field = field;
         this.json = json;
     }
