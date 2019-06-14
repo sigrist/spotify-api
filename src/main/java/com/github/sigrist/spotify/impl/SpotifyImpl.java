@@ -26,16 +26,13 @@ package com.github.sigrist.spotify.impl;
 import com.github.sigrist.spotify.Me;
 import com.github.sigrist.spotify.Spotify;
 import com.github.sigrist.spotify.SpotifyConfiguration;
-import feign.Feign;
-import feign.jackson.JacksonDecoder;
-import feign.jackson.JacksonEncoder;
 
 /**
  * Implementation for the {@link Spotify} and {@link SpotifyInternal}
  * interfaces.
  * @since 1.0.0
  */
-public final class SpotifyImpl implements SpotifyInternal {
+public final class SpotifyImpl implements Spotify {
 
     /**
      * The configuration values to connect with the Spotify Web API.
@@ -43,25 +40,18 @@ public final class SpotifyImpl implements SpotifyInternal {
     private final SpotifyConfiguration conf;
 
     /**
-     * The Feign Builder instance to create the feign instances.
-     */
-    private final Feign.Builder builder;
-
-    /**
      * Default constructor.
      * @param configuration The configuration instance.
      */
     public SpotifyImpl(final SpotifyConfiguration configuration) {
         this.conf = configuration;
-        this.builder = Feign.builder().decoder(new JacksonDecoder()).encoder(new JacksonEncoder());
     }
 
     @Override
-    public <T> T build(final Class<T> clazz) {
-        final String server = this.conf.getServer();
-        return this.builder.target(clazz, server);
+    public SpotifyConfiguration conf() {
+        return this.conf;
     }
-
+    
     @Override
     public Me user() {
         return new MeImpl(this);

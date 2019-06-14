@@ -26,6 +26,7 @@ package com.github.sigrist.spotify.impl;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.github.sigrist.spotify.Me;
 import com.github.sigrist.spotify.Playlists;
+import com.github.sigrist.spotify.Spotify;
 import com.github.sigrist.spotify.impl.feign.MeEndpoint;
 import java.time.LocalDate;
 
@@ -45,9 +46,9 @@ public class MeImpl extends AbstractSpotifyObject implements Me {
      * Default constructor. Initialize the endpoint.
      * @param spotify The {@link SpotifyInternal} instance.
      */
-    public MeImpl(final SpotifyInternal spotify) {
+    public MeImpl(final Spotify spotify) {
         super(spotify);
-        this.endpoint = this.getSpotify().build(MeEndpoint.class);
+        this.endpoint = this.build(MeEndpoint.class);
     }
 
     @Override
