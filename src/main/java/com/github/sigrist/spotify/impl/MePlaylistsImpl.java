@@ -26,6 +26,7 @@ package com.github.sigrist.spotify.impl;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.github.sigrist.spotify.Playlist;
 import com.github.sigrist.spotify.Playlists;
+import com.github.sigrist.spotify.Spotify;
 import com.github.sigrist.spotify.impl.feign.PlaylistEndpoint;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -49,11 +50,11 @@ public final class MePlaylistsImpl extends AbstractSpotifyObject implements Play
 
     /**
      * Constructor.
-     * @param spotify The {@link SpotifyInternal} implementation.
+     * @param spotify The {@link Spotify} implementation.
      */
-    public MePlaylistsImpl(final SpotifyInternal spotify) {
+    public MePlaylistsImpl(final Spotify spotify) {
         super(spotify);
-        this.endpoint = spotify.build(PlaylistEndpoint.class);
+        this.endpoint = this.build(PlaylistEndpoint.class);
         this.playlist = new LinkedList<>();
     }
 

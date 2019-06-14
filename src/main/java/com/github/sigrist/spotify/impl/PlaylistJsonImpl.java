@@ -25,6 +25,7 @@ package com.github.sigrist.spotify.impl;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.github.sigrist.spotify.Playlist;
+import com.github.sigrist.spotify.Spotify;
 import com.github.sigrist.spotify.impl.feign.PlaylistEndpoint;
 
 /**
@@ -41,10 +42,10 @@ public final class PlaylistJsonImpl extends AbstractSpotifyObject implements Pla
 
     /**
      * Constructor.
-     * @param spotify The {@link SpotifyInternal} instance.
+     * @param spotify The {@link Spotify} instance.
      * @param json The Playlist JsonNode.
      */
-    public PlaylistJsonImpl(final SpotifyInternal spotify, final JsonNode json) {
+    public PlaylistJsonImpl(final Spotify spotify, final JsonNode json) {
         super(spotify);
         this.json = json;
     }

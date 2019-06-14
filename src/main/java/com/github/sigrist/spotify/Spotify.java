@@ -41,6 +41,13 @@ public interface Spotify {
     }
 
     /**
+     * Returns the {@link SpotifyConfiguration} instance. 
+     * @return The {@link SpotifyConfiguration} instance.
+     */
+    SpotifyConfiguration conf();
+    
+    
+    /**
      * Get the current user info.
      * @return An instance of {@link Me}.
      */

@@ -25,6 +25,8 @@ package com.github.sigrist.spotify.impl;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.github.sigrist.spotify.FieldNotFoundException;
+import com.github.sigrist.spotify.Spotify;
+import com.github.sigrist.spotify.impl.feign.EndpointFactory;
 import java.time.LocalDate;
 import org.cactoos.Scalar;
 import org.cactoos.scalar.Sticky;
@@ -44,20 +46,29 @@ public abstract class AbstractSpotifyObject implements Scalar<JsonNode> {
     private final Unchecked<JsonNode> scalar;
 
     /**
-     * The {@link SpotifyInternal} implementation.
+     * The {@link Spotify} implementation.
      */
-    private final SpotifyInternal spotify;
+    private final Spotify spotify;
 
     /**
-     * Default constructor.
-     * @param spotify The {@link SpotifyInternal} implementation.
+     * The factory to build the Feign endpoints.
      */
-    public AbstractSpotifyObject(final SpotifyInternal spotify) {
+    
+    private final EndpointFactory factory;
+    /**
+     * Default constructor.
+     * @param spotify The {@link Spotify} implementation.
+     */
+    public AbstractSpotifyObject(final Spotify spotify) {
         this.spotify = spotify;
         final Sticky<JsonNode> sticky = new Sticky<>(this);
         this.scalar = new Unchecked<>(sticky);
+        this.factory = new EndpointFactory(spotify);
     }
 
+    protected final <T> T build(final Class<T> clazz) {
+        return this.factory.build(clazz);
+    }
     @Override
     public JsonNode value() throws Exception {
         return this.load();
@@ -115,10 +126,10 @@ public abstract class AbstractSpotifyObject implements Scalar<JsonNode> {
     }
 
     /**
-     * Get the {@link SpotifyInternal} instance.
+     * Get the {@link Spotify} instance.
      * @return The instance.
      */
-    protected final SpotifyInternal getSpotify() {
+    protected final Spotify getSpotify() {
         return this.spotify;
     }
 
