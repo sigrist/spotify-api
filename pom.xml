@@ -97,13 +97,38 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<!-- <version>3.8.1</version>  -->
+				<!-- <version>3.8.1</version> -->
 			</plugin>
 
 			<!-- JUnit 5 requires Surefire version 2.22.1 or higher -->
 			<plugin>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.22.2</version>
+			</plugin>
+
+			<!-- Maven enforcer plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<version>3.0.0-M2</version>
+				<executions>
+					<execution>
+						<id>banned-dependencies</id>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<rules>
+						<bannedDependencies>
+							<excludes>
+								<!-- @todo #34 Add more items to banned dependencies -->
+								<exclude>org.slf4j:*:*:jar:compile</exclude>
+							</excludes>
+						</bannedDependencies>
+					</rules>
+				</configuration>
 			</plugin>
 
 		</plugins>
