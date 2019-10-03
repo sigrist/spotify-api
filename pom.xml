@@ -14,7 +14,7 @@
 		<maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
 
 		<junit.jupiter.version>5.5.2</junit.jupiter.version>
-		<feign.version>10.2.3</feign.version>
+		<feign.version>10.5.1</feign.version>
 	</properties>
 
 	<dependencies>
